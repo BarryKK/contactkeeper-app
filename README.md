@@ -11,7 +11,7 @@
 * Postman: 调试API
 
 ## Configuration
-Express配置
+Express 配置
 ```javascript
 const express = require('express');
 const connectDB = require('./config/db');
@@ -44,7 +44,7 @@ const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`)); 
 ```
-Express-validator:用于验证用户注册
+Express-validator: 用于验证用户注册
 ```javascript
 router.post('/', 
     [
@@ -81,7 +81,7 @@ router.post('/',
             await user.save();
       }
 ```
-Jsonwebtoken:用于加密用户登陆数据
+Jsonwebtoken: 用于加密用户登陆数据
 ```javascript
 const payload= {
                 user:{
