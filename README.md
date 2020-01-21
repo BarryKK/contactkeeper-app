@@ -5,12 +5,13 @@
 项目预览: https://young-eyrie-46821.herokuapp.com/
 
 此项目使用到的技术：
-* express.js
-* react
-* mongodb
+* Express.js： 后端Node.js框架
+* React: 前端框架
+* MongoDB：数据库
+* Postman: 调试API
 
 ## Configuration
- express配置
+Express配置
 ```javascript
 const express = require('express');
 const connectDB = require('./config/db');
@@ -43,7 +44,7 @@ const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`)); 
 ```
-express-validator:用于验证用户注册
+Express-validator:用于验证用户注册
 ```javascript
 router.post('/', 
     [
